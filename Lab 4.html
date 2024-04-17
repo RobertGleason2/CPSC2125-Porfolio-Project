@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--Robert Gleason-->
+<!--CPSC 2125-->
+<!--9/18/2023-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 4</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+
+    <body>
+      
+      <div class="layout">
+      <header>
+        <img src=images/cybersecuritylogo.jpg>
+        <h1>Making a Sandwich</h1>
+      </header>
+        <div class="main"
+      <main>
+        <img src=images/chickensandwitch.jpg>
+        <p>Today we are going to be making a sandwitch today</p>
+        <h2>Ingredients</h2>
+        <p>
+          <ul>
+            <div class="meat">
+            <li>Chicken</li>
+            </div>
+            <div class="vegitables">
+            <li>Letuce</li>
+            </div>
+            <div class="dairy">
+            <li>Cheese</li>
+            </div>
+            <li>Bread</li>
+          </ul>
+          <div class="instructions">
+          <h2>Instructions</h2>
+          </div>
+          <ol>
+            <li> First you would need to start with grilling the chicken in a pan. The chicken can be seasoned with any seasoning you like.</li>
+            <li> Toast the bread in a toaster until it's golden brown.</li>
+            <li> Add the chicken to the break with leduce and cheese.</li>
+          </ol>
+        </p>
+        <h2>Instructions for Lab 4 </h2>
+        <p>
+          If you have any correcons to make from your graded assignment 3, update those changes before you go on with this one.<br> 
+Fork the Lab 3 Repl.it from Assignment 3 to copy the project for this assignment, Lab 4. <br>
+Create a CSS grid layout.  If you used header, nav, main, footer semanc tags previously use the following layout: <br>
+          IMPORTANT: don't throw away your current page with semanc tags and just plug in an example with &lt;div&gt; blocks.  The grid layout has to work with all your exisng pages.  The idea is that except for the new page, lab4.html, you do not have to work on your exisng pages much at all, AND YET they will all sport the grid layout.  You might just add a &lt;div&gt; for the wrapper or container for the whole page! <br>
+            Use grid-template-areas property method to apply your grid.  We cover this in detail in lecture, but there’s more details on using grid-template-areas: <br>    htps://www.smashingmagazine.com/understandingcss-grid-template-areas/. <br>
+            After you create your grid be sure to apply it to labs 1-3 and your index page. 
+Add hover effects to the exisng lab porolio navigaon links. <br>
+            Add the new lab4.html page to your Labs site in repl.it.  Start by adding the same semanc tags, common nav and header to the page and code the tle and heading to show Lab 4.  Think of the process as using a page template.  All the pages should have a common look and feel. <br>
+            Add hyperlinks for lab4.html to the index.html page and to the nav on each page so we can navigate to lab4.html from anywhere in the site. <br>
+The lab 4 page will be a page from a recipe website.  Recipes have a tle, a list of ingredients, and an instrucons secon.  The recipe will go in main.  The rest of the page should be the same as the secons in labs 1-3. <br>
+            Design the lab 4 page to: show the recipe for a sandwich that includes meat, vegetables, and dairy/cheese.  The ingredients should be displayed as an unordered list, with no bullets.  Meat ingredients should have a light red background color, vegetables should have a light green background, and dairy products should have a light yellow.  The tle should be in a sans serif font of your choice, and the instrucons for the recipe should have a heading "Instrucons" and the font for the instrucons should be italic.  All this can be done in CSS.  All CSS should be in your CSS file (no inline styles!) <br>
+            Test your navigaon and rendering on all pages. 
+To submit your work, get the shareable link (use the invite buton to generate a join link) and paste it into the submission box in CougarVIEW.  As long as I can get to your repl.it via the link, that’s all you need to turn in.  If you need to, submit the link inside a .txt file. <br>
+            Grading Checklist: <br>
+•	Corrections if needed to previous labs <br>
+•	Lab 4 added in a new page with the same semantic headings from all the other pages <br>
+•	Lab 4 link added to the nav bar on all pages; all navigation working <br>
+•	Add a grid layout that uses the semantic tag structure (should be the same on ALL pages) and the grid should work and be the same for index and labs 1-4 pages.  The only different content on each page should be in main. <br>
+•	Add hover effects to links in the nav bar <br>
+•	Recipe added for a sandwich <br>
+•	Title with a sans serif font <br>
+•	Ingredients are unordered list with no bullets <br>
+•	Instruction heading in italics over recipe <br>
+•	Meat ingredients have a red background <br>
+•	Veg ingredients have a green background <br>
+• 	Dairy ingredients have a yellow background <br>
+•	All style in CSS sheet, no inline styles! <br>
+•	Make sure your HTML and CSS pages are organized and easy to read.  All text should be in a closed block tag.  Use comments! <br>
+•	Upload Repl.it link to CougarView 
+        </p>
+      </main>
+        </div>
+      
+      <div class="nav">
+      <nav>
+        <ul>
+          <li type="none"><a href="index.html">Front Page</li>
+          <li type="none"><a href="Lab 1.html">Lab 1</a></li>
+          <li type="none"><a href="Lab 2.html">Lab 2</a></li>
+          <li type="none"><a href="Lab 3.html">Lab 3</a></li>
+          <li type="none"><a href="Lab 5.html">Lab 5</a></li>
+          <li type="none"><a href="Lab 6.html">Lab 6</a></li>
+          <li type="none"><a href="Updates.html">Updates</a></li>
+          </ul>
+      </nav>
+      </div>
+      <div class="footer">
+      <footer>
+      <p>Thank you for visiting my website. My contact information is:<br>
+        Robert Gleason<br>
+        gleason_robert@studentsstate.edu<br>
+      </p>
+          
+        <p>This document was last modified:</p>
+        <p id="date"></p>
+        <script>
+          var text = document.lastModified;
+          document.getElementById("date").innerHTML = text;
+        </script>
+      </footer>
+      </div>
+      </div>
+  </body>
+</html>
+<!-- I mainly used this website to get the grid to work but there's still issues with it 
+https://www.digitalocean.com/community/tutorials/how-to-style-the-html-div-element-with-css
+-->

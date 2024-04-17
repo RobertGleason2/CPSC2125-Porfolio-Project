@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--Robert Gleason-->
+<!--CPSC 2125-->
+<!--9/11/23-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Updates</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  
+  <body>
+    <div class="layout">
+    <header>
+      <img src=images/cybersecuritylogo.jpg>
+    <h1>Updates to the Website</h1>
+    <p>Here is where I will record the changes made on the project starting with lab 3. This will include the changes themselves, the time it took and the date.</p>
+    </header>
+    <div class="main">
+    <main>
+      <h2>September 11, 2023</h2>
+      <ul>
+        <li>Added lab 3 and the updates page</li>
+        <li>Updated all the webiste pages to have HTML semanc  tags</li>
+        <li>Used CSS to change the background and font color of assignment 3 page</li>
+        <li>Added a logo image to all of the web pages</li>
+      </ul>
+      <h2>September 19, 2023</h2>
+      <ul>
+        <li>Added hoving effects to the links to changes the colors if you have been to them or are hoving over them<br>
+        Added a new page called Assignment 4 where it shows you a recipe for a sandwitch</li>
+        <li>Updated the webpages to have the right html formating</li>
+        <li>Added a grid layout to assignment 4, it's not completely finished since I'm having issues understanding grids. That is why it's only on assignment 4</li>
+        <li>Added special colored background to certain aspects of assignment 4, specifically the ingredients of the sandwitch</li>
+      </ul>
+      <h2>September 22-24</h2>
+      <ul>
+        <li>I had issues getting the grid to work in the first place but managed to finally figure it out and now all the webpages have the grid setup to have the header at the top, the nav bar containing the hyperlinks to other parts of the websites on the left side of the website, the main content in the middle of the website, and the footer at the bottem of the website.</li>
+        <li>I changed the properties of how hovering over hyperlinks changes the color. It used to stay the color it's set to when you've visited the link. Now it's set to prioritize changing the color of the link when hovering over it.</li>
+      </ul>
+      <h2>October 2</h2>
+      <ul>
+        <li>Changed all of the text display on the updates screen to added in ordered lists</li>
+        <li>Changed all of the names of the pages and projects to be "Labs" instead of "Assignments" to improve tracking which assignments are which</li>
+        <li>Added Lab 5. Lab 5 contains a form with 2 text input elemenets, and email input element, 1 select element for states, 1 radio element for marital status, 1 checkbox element for coding skills, 1 textarea element for comments, 
+ 1 submit button element to post the form to a website and 1 reset button element to clear the form</li>
+        <li>When submitting the form, the webiste redirects the user to the website https://webdevbasics.net/scripts/yoga.php where the output is displayed.</li>
+        <li>I added script files to the footers of each page to show the date lst modified. I also added my contact information in the footer.</li>
+        <li>I changed the tiles and headers to accuretly display the names of the labs. (Changed from Assignments to Labs) </li>
+      </ul>
+      <h2>October 16</h2>
+      <ul>
+        <li>Created a new html document called Lab 6.html</li>
+        <li>Created a new css documnet called lab6.css</li>
+        <li>Added a different type of grid format to lab 6 using the new css file. This grid is a 5x3 and each section has its own unique background color. The sections of the grid are Header, Nav, Section, Aside, Article, and Footer.</li>
+        <li>The Nav section has a horizontal list of "buttons" that displays the other pages and increases in size when hovering.</li>
+        <li>The Article section has three buttons that change the background color of that specific section based on name of the color of the button. This is done in a seperate javascript file. The javascript will change the background of the section specified by the id when called. </li>
+        <li>The Article, Section, and Aside sections have generated placeholder text for now. </li>
+      </ul>
+    </main>
+    </div>
+
+    <div class="nav">
+		<nav>
+        <h2>Hyperlinks</h2>
+        <!-- Nav bar used to navigate the website-->
+      <ul>
+        <li type="none"><a href="index.html">Front Page</a></li>
+        <li type="none"><a href="Lab 1.html">Lab 1</a></li>
+        <li type="none"><a href="Lab 2.html">Lab 2</a></li>
+        <li type="none"><a href="Lab 3.html">Lab 3</a></li>
+        <li type="none"><a href="Lab 4.html">Lab 4</a></li>
+        <li type="none"><a href="Lab 5.html">Lab 5</a></li>
+        <li type="none"><a href="Lab 6.html">Lab 6</a></li>
+      </ul>
+    </nav>
+    </div>
+    <div class="footer">
+    <footer>
+      <p>Thank you for visiting my website. My contact information is:<br>
+        Robert Gleason<br>
+        gleason_robert@studentsstate.edu<br>
+      </p>
+          
+        <p>This document was last modified:</p>
+        <p id="date"></p>
+        <script>
+          var text = document.lastModified;
+          document.getElementById("date").innerHTML = text;
+        </script>
+    </footer>
+    </div>
+  </div>
+  </body>
+      <!-- As mentioned in the updates, I changed the properies of the css feature hovering over a link. I used this stack overflow article to learn about the setting priority in css using !important 
+https://stackoverflow.com/questions/4949280/overriding-visited-overrides-link-hover-active-->
+</html>

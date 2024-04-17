@@ -1,0 +1,82 @@
+
+body {
+  
+  background-color: #53bcdf;
+  color: #ed0226;
+
+}
+
+
+.layout{
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  width: 600px;
+  /*grid-template-columns:  auto auto auto  ;*/
+  grid-template-columns: 1fr 2fr 1fr;
+  border-radius: 10px;
+  /*border-radius: 10px;*/
+  background-color: white;
+  padding: 10px;
+  grid-template-areas:  "header  header  header"
+                        "nav    main    main"
+                        "footer  footer  footer";
+
+}
+
+a:active{
+  color: blue;
+}
+
+a:hover{
+  color:orange !important;
+}
+/*I used this article from stack overflow to learn about setting priority to links
+https://stackoverflow.com/questions/4949280/overriding-visited-overrides-link-hover-active
+*/
+
+a:visited{
+  color: gray;
+}
+
+header {
+  grid-area: header;
+  font-family: sans-serif;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+.main {
+  grid-area: main;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+.nav{
+  grid-area: nav;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+
+}
+
+.footer {
+  grid-area: footer;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-style: italic;
+  
+}
+.instructions{
+  font-style: italic;
+}
+.meat
+{
+  background-color: #dc4c4c;
+}
+.vegitables{
+  background-color: lightgreen;
+}
+.dairy{
+  background-color: #ecec7e;
+}
+
+img{
+max-width: 75%;
+max-height: 50%;
+
+}

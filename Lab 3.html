@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--Robert Gleason-->
+<!--CPSC 2125-->
+<!--9/11/23-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lab 3</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+  <body>
+    <div class="layout">
+	  <header>
+      <img src=images/cybersecuritylogo.jpg>
+      <h1>Lab 3</h1>
+		  <p>This week I will be adding a bunch of CSS semanc tags, add a logo image, add font and background color, and add a folder to hold the images.</p>  
+    </header>
+    <div class="main">
+    <main>
+      <p>
+        <h2>Instructions for Lab 3</h2>
+        Assignment 3 Internet Programming Fall 2023 – CPSC 2125 Bruce Montgomery <br><br>
+Assignment 3 – HTML Semancs/Basic CSS (Lab 3) – 30 Points – due Monday 9/11 Midnight <br><br>
+If you have any correcons to make from your graded assignment 2, update those changes before you go on with this one. <br><br>
+Fork the Lab 2 Repl.it from Assignment 2 to copy the project for this assignment, Lab 3. <br><br>
+Add a lab3.html page to the project and add these instrucons as text.  Add a Lab 3 hyperlink to the index page and all other pages in your project porolio. <br><br>
+Add semanc tags to each page in your site.  Use at least header nav main and footer.  Remember, these tags don't change the look of the resulng page, they only divide your page into logical chunks that may be recognized by browsers or used in CSS styling. 
+Add an images folder to your site.  Drag and drop a header banner or logo image to this folder.  Google Image Search, under Tools, will let you filter to only use resources from the Creave Commons.  Avoid using copyrighted images. Alternavely, you could use an image you create yourself.  You can also add your image from Lab 1 to the images folder.  Add the logo image to all pages. <br><br>
+Use an external style sheet/CSS file (there may be an exisng one if you used the HTML/CSS template from Repl.it.   Add a style element for the body tag.  Add a font color and a background color.  Feel free to try other CSS elements from the lecture or CSS example sites like 
+htps://www.w3schools.com/w3css/w3css_examples.asp.  Be sure to run/render your pages to verify results. <br><br>
+To submit your work, get the shareable link (use the invite buton to generate a join link) and paste it into the submission box in CougarVIEW.  As long as I can get to your repl.it via the link, that’s all you need to turn in.  If you need to, submit the link inside a .txt file. Grading checklist: <br><br>
+•	Corrections to previous labs/assignments (if any) <br>
+•	Lab 3 page added with instructions. <br>
+•	Link to lab 3 added to nav list on all pages <br>
+•	Semantic tags added to ALL pages (minimum of header, nav, main, footer) (All your body content should be organized under one of these tags.) <br>
+•	Images folder with a banner image (logo) and the image from lab 1 (don't violate copyright!) <br>
+•	Add the banner image (logo) to all pages using appropriate path to image in folder <br>
+•	Link to an external CSS file has a style for the body tag including a font color and a background color <br>
+•	Use entities (&lt and &gt) to display the angle brackets <> in the 4th section of the instructions <br>
+•	Ensure all text in HTML is enclosed in tags <br>
+•	Both HTML and CSS files should be organized and easy to read – Use comments to include header blocks in all files (CSS and HTML) as well as any supplemental documentation. <br>
+•	Repl.it link should be uploaded to CougarVIEW. <br><br>
+Note: Always cite what you write!  If you get code or content from somewhere you must include at least a URL or other source idenficaon.  You must understand all the code you turn in.  It is plagiarism (academic dishonesty) to use code or content, in part or in whole, writen by other people without proper atribuon.  Failure to do so will result in a 0 on the assignment and may result in an academic misconduct report. 
+      </p>
+    </main>
+    </div>
+
+    <div class="nav">
+		<h2>Hyperlinks</h2>
+    <!-- Nav bar used to navigate the website-->
+		<nav>
+      <ul>
+        <li type="none"><a href="index.html">Front Page</li>
+        <li type="none"><a href="Lab 1.html">Lab 1</a></li>
+        <li type="none"><a href="Lab 2.html">Lab 2</a></li>
+        <li type="none"><a href="Lab 4.html">Lab 4</a></li>
+        <li type="none"><a href="Lab 5.html">Lab 5</a></li>
+        <li type="none"><a href="Lab 6.html">Lab 6</a></li>
+        <li type="none"><a href="Updates.html">Updates</a></li>
+      </ul>
+    </nav>
+    </div>
+    <div class="footer">
+    <footer>
+      <p>Thank you for visiting my website. My contact information is:<br>
+        Robert Gleason<br>
+        gleason_robert@studentsstate.edu<br>
+      </p>
+          
+        <p>This document was last modified:</p>
+        <p id="date"></p>
+        <script>
+          var text = document.lastModified;
+          document.getElementById("date").innerHTML = text;
+        </script>
+    </footer>
+    </div>
+    </div>
+  </body>
+
+</html>
+
+<!-- It took me a while to find out how to properly link my css file to the webpage and I used this youtube tutorial as guidence as well as the notes
+https://www.youtube.com/watch?v=y4gWr2fya0I -->

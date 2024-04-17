@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--Robert Gleason-->
+<!--CPSC 2125-->
+<!--10/2/2023-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 5</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src=script.js></script>
+  </head>
+
+    <body>
+      
+      <div class="layout">
+      <header>
+        <img src=images/cybersecuritylogo.jpg>
+        <h1>HTML Forms</h1>
+      </header>
+        <div class="main"
+      <main>
+        <h2>Please Fill Out The Form</h2>
+        <form action="https://webdevbasics.net/scripts/yoga.php" method="POST">
+          <label for="fName">First Name:</label><br>
+          <input type="text" id="fName" name="fName"><br>
+          <label for="lName">Last Name:</label><br>
+          <input type="text" id="lName" name="lName"><br>
+          <label for="email">Email:</label><br>
+          <input type="email" name="email"><br>
+          <label for="States">Please select which state you're from.</label><br>
+          <select name="States"><br>
+            <option>AL</option>
+            <option>FL</option>
+            <option>GA</option>
+          </select><br>
+          <p>What is your marital state?</p>
+          <ol>
+            <li type="none"><input type="radio" name="status" value="Married">Married</li>
+            <li type="none"><input type="radio" name="status" value="Single">Single</li>
+          </ol><br>
+          <!-- After this is turned in, I might add more languages for fun -->
+          <p>Please select all skills that apply to you.</p>
+          <ul>
+            <li type="none"><input type="checkbox" name="lang1" value="Java">Java</li>
+            <li type="none"><input type="checkbox" name="lang2" value="Python">Python</li>
+            <li type="none"><input type="checkbox" name="lang3" value="HTML">HTML</li>
+          </ul><br>
+          <p>Tell us what you think of this website so far.</p>
+          <textarea name="entry" rows="6" cols="55" maxlength="100"></textarea><br>
+          <input type="submit">
+          <input type="reset" value="Start over">
+        </form>
+      </main>
+        </div>
+      
+      <div class="nav">
+      <nav>
+        <ul>
+          <li type="none"><a href="index.html">Front Page</li>
+          <li type="none"><a href="Lab 1.html">Lab 1</a></li>
+          <li type="none"><a href="Lab 2.html">Lab 2</a></li>
+          <li type="none"><a href="Lab 3.html">Lab 3</a></li> 
+          <li type="none"><a href="Lab 4.html">Lab 4</a></li>
+          <li type="none"><a href="Lab 6.html">Lab 6</a></li>
+          <li type="none"><a href="Updates.html">Updates</a></li>
+          </ul>
+      </nav>
+      </div>
+      <div class="footer">
+      <footer>
+      <p>Thank you for visiting my website. My contact information is:<br>
+        Robert Gleason<br>
+        gleason_robert@studentsstate.edu<br>
+      </p>
+          
+        <p>This document was last modified:</p>
+        <p id="date"></p>
+        <script>
+          var text = document.lastModified;
+          document.getElementById("date").innerHTML = text;
+        </script>
+        <!-- I didn't really know how else to do this. I wanted to use the external js file but couldn't figure it out. I used the website https://www.w3schools.com/jsref/prop_doc_lastmodified.asp for help. -->
+      </footer>
+      </div>
+      </div>
+  </body>
+</html>
+<!-- I mainly used this website to get the grid to work but there's still issues with it 
+https://www.digitalocean.com/community/tutorials/how-to-style-the-html-div-element-with-css
+-->
+<!-- I used some examples from this website and the class notes to help me understand how to impliment some of the form elements 
+https://www.w3schools.com/html/html_forms.asp-->
